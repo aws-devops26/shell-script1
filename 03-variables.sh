@@ -1,2 +1,2 @@
 #!/bin/bash
-date=$dateecho " date and time is :$date"
+date=$date echo " date and time is : $date"
