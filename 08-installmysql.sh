@@ -8,6 +8,6 @@ then
 echo  -e " $R error : please run this script with root access $N"
 exit 5
 else
-echo " $G u r root user $N"
+echo  -e " $G u r root user $N"
 fi
 yum install mysql -y
