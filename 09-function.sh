@@ -20,6 +20,6 @@ else
 echo  -e " $G u r root user $N"
 fi
 yum install mysql -y
-validate $? " mysql installed "
+validate $? "mysql installed "
 yum install git -y
-validate $? " git installed "
+validate $? "git installed "
