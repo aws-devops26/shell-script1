@@ -22,6 +22,7 @@ if [ $id -ne 0 ]
     echo -e " $G u r root user $N"
 fi
 echo  "all arguements passed:$@ "
+
 for package in $@
 do
     yum list installed $package
@@ -30,5 +31,6 @@ do
     yum install $package -y
     VALIDATE $? "installation of $packages "
  else
-    echo -e " $Y $package is already installed....$R SKIPPING $N"
+    echo -e "$Y $package is already installed....$R SKIPPING $N"
+
 done
