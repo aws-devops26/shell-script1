@@ -4,7 +4,7 @@ R="\e[31m"
 N="\e[0m"
 G="\e[32m"
 validate(){
-if [ $id -ne 0 ]
+if [ $? -ne 0 ]
 then
 echo  -e " $R installing my sql FAILED $N"
 exit 5
