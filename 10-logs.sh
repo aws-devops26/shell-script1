@@ -24,6 +24,9 @@ else
 echo  -e " $G u r root user $N"
 fi
 yum install mysql -y &>> $LOGFILE
-validate $? -e " $G mysql installed $N "
+
+validate $? -e "$G mysql installed $N "
+
 yum install git -y &>> $LOGFILE
-validate $? -e " $G git installed $N "
+
+validate $? -e "$G git installed $N "
