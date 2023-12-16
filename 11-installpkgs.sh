@@ -4,7 +4,7 @@ R="\e[31m"
 G="\e[32m"
 N="\e[0m"
 Y="\e[33m"
-validate()
+ VALIDATE()
 {
 if [ $1 -ne 0 ]
 then
@@ -21,14 +21,14 @@ if [ $id -ne 0 ]
     else
     echo -e " $G u r root user $N"
 fi
-echo " all arguements passed:$@ "
+echo  "all arguements passed:$@ "
 for package in $@
 do
     yum list installed $package
     if [ $? -ne 0 ]
     then
     yum install $package -y
-    validate $? "installation of $packages "
+    VALIDATE $? "installation of $packages "
  else
     echo -e " $Y $package is already installed....$R SKIPPING $N"
 done
