@@ -1,13 +1,13 @@
 #!/bin/bash
 id=$(id -u)
-r="\e[31m"
-n="\e[0m"
-g="\e[32m"
+R= "\e[31m"
+N= "\e[0m"
+G= "\e[32m"
 if [ $id -ne 0 ]
 then
-echo " $r error : please run this script with root access $n"
+echo " $R error : please run this script with root access $N"
 exit 5
 else
-echo " $g u r root user $n"
+echo " $G u r root user $N"
 fi
 yum install mysql -y
