@@ -3,5 +3,6 @@ num1=$1
 if [ $num1 -gt 100 ]
 then
 echo " given no $num1 is greater"
+else
 echo " given no $num1 is smaller"
 fi
