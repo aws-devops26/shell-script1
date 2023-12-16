@@ -1,12 +1,12 @@
 #!/bin/bash
 id=$(id -u)
-TIMESTAMP= $(date +%F-%H-%M-%S)
+TIMESTAMP= $(date -%F-%H-%M-%S)
 R="\e[31m"
 N="\e[0m"
 G="\e[32m"
 Y="\e[33m"
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
-echo " script started executed at $TIMESTAMP" &>> $LOGFILE
+echo "script started executed at $TIMESTAMP" &>> $LOGFILE
 validate(){
 if [ $1 -ne 0 ]
 then
