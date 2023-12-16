@@ -4,6 +4,15 @@ R="\e[31m"
 G="\e[32m"
 N="\e[0m"
 Y="\e[33m"
+validate()
+if [ $1 -ne 0 ]
+then
+echo  -e " $R $2.... FAILED $N"
+exit 5
+else
+echo  -e " $G $1.... SUCESS $N"
+fi
+}
 if [ $id -ne 0 ]
     then
     echo -e "$R error : please run this with root access $N "
