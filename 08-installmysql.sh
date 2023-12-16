@@ -5,7 +5,7 @@ N="\e[0m"
 G="\e[32m"
 if [ $id -ne 0 ]
 then
-echo " $R error : please run this script with root access $N"
+echo  -e " $R error : please run this script with root access $N"
 exit 5
 else
 echo " $G u r root user $N"
