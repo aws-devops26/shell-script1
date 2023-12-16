@@ -11,3 +11,18 @@ else
 echo  -e " $G u r root user $N"
 fi
 yum install mysql -y
+if [ $id -ne 0 ]
+then
+echo  -e " $R installing my sql FAILED $N"
+exit 5
+else
+echo  -e " $G installing my sql SUCESS $N"
+fi
+yum install git -y
+if [ $id -ne 0 ]
+then
+echo  -e "  $R installing git FAILED $N"
+exit 5
+else
+echo  -e " $G installing git SUCESS $N"
+fi
