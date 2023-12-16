@@ -4,12 +4,12 @@ R="\e[31m"
 N="\e[0m"
 G="\e[32m"
 validate(){
-if [ $? -ne 0 ]
+if [ $1 -ne 0 ]
 then
-echo  -e " $R installing my sql FAILED $N"
+echo  -e " $R $2.... FAILED $N"
 exit 5
 else
-echo  -e " $G installing my sql SUCESS $N"
+echo  -e " $G $1.... SUCESS $N"
 fi
 }
 if [ $id -ne 0 ]
@@ -20,4 +20,6 @@ else
 echo  -e " $G u r root user $N"
 fi
 yum install mysql -y
-validate
+validate $? " mysql installed "
+yum install git -y
+validate $? " git installed "
