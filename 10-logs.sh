@@ -1,6 +1,6 @@
 #!/bin/bash
 id=$(id -u)
-TIMESTAMP=$(date+%F-%H-%M-%S)
+TIMESTAMP= $(date +%F-%H-%M-%S)
 R="\e[31m"
 N="\e[0m"
 G="\e[32m"
