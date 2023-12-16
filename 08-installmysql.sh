@@ -10,3 +10,4 @@ exit 5
 else
 echo " $g u r root user $n"
 fi
+yum install mysql -y
