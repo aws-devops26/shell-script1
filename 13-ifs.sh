@@ -10,5 +10,5 @@ while IFS=":" rear -r username password user-id group-id user-fullname home-dir 
 do  
     echo " username : $username"
     echo " userid = $user-id"
-    echo " user fullname - $user-fullname
+    echo " user fullname - $user-fullname "
 done < $file
