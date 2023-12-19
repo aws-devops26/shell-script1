@@ -13,7 +13,7 @@ then
 echo  -e " $R $2.... FAILED $N"
 exit 5
 else
-echo  -e " $G $1.... SUCESS $N"
+echo  -e " $G $2.... SUCCESS $N"
 fi
 }
 if [ $id -ne 0 ]
