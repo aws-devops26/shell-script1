@@ -6,7 +6,7 @@ if [ ! -f $file ]
     then
     echo -e " $R source diectory : $SOURCE_DIR does not exists. $N"
 fi 
-while IFS=":" read -r username password user_id group_id user-fullname home_dir shell_path
+while IFS=":" read -r username password user_id group_id user_fullname home_dir shell_path
 do  
     echo " username : $username"
     echo " userid = $user_id"
