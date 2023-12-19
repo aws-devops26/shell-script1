@@ -1,5 +1,9 @@
 #!/bin/bash
 SOURCE_DIR=/tmp/shell-script1-logs
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
+
 if [ ! -d $SOURCE_DIR ]
 then 
 echo -e " $R source directory : $SOURCE_DIR does not exist. $N "
