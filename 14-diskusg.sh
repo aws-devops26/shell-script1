@@ -1,10 +1,10 @@
 #!/bin/bash
 DISK_USAGE=$(df -hT | grep -vE 'tmp|file')
 DISK_THRESHOLD=1
-message:" "
+message=" "
 while IFS= read line
 do
-    usage=$(echo $line | awk '{print $6f}' | cut -d % -f1)
+    usage=$(echo $line | awk '{print $5f}' | cut -d % -f1)
     partition=$(echo $line | awk '{print $1f}')
     if [ $usage -ge $DISK_THRESHOLD ]
     then
